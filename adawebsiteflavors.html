@@ -6,6 +6,7 @@
 <title>Display</title>
 
 <style>
+
   /* FONTS: embedded right in this file so they show for every visitor (no downloads or installs needed). */
   @font-face {
     font-family: 'Bubblegum Sans';
@@ -23,7 +24,7 @@
   /* PAGE: white background with some space around the edges */
   body {
     margin: 0;
-    background: #fff;
+    background: transparent;
     padding: 30px;
     box-sizing: border-box;
   }
@@ -49,7 +50,7 @@
   /* NAME: large pink Bubblegum Sans text. Change color or font-size here. */
   .entry h2 {
     font-family: 'Bubblegum Sans', cursive;
-    font-size: 2.6rem;
+    font-size: clamp(2.5rem, 8vw, 5rem);
     font-weight: normal;
     color: #a8325f; /* shop pink */
     margin: 0 0 4px;
@@ -58,11 +59,11 @@
   /* DESCRIPTION: smaller gray SF Cartoonist Hand text under each name.
      If a device doesn't have the font, it falls back to Comic Sans. */
   .entry p {
-    font-family: 'SF Cartoonist Hand', 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', cursive;
-    font-size: 1.1rem;
-    color: #808080; /* gray */
-    margin: 0;
-  }
+  font-family: 'SF Cartoonist Hand', 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', cursive;
+  font-size: clamp(1.1rem, 0.9rem + 1vw, 1.8rem);
+  color: #404040;
+  margin: 0;
+}
 
   
 </style>
@@ -89,7 +90,7 @@
 ["Passionfruit Sorbet", "Very tart & refreshing (GF) (V)"],
 ["Strawberry Rose Sorbet", " (GF, V)"],
 ["Vegan Creme De Menthe", "Mint Liqueur, Choc. Chips, Lentil Cream (GF)"],
-["Absolutely Almond", "Sliced Almonds in an Almond Base (GF)"],
+["Peppermint Stick", "Peppermint Base with Peppermint Sticks (GF)"],
 ["Chocolate Chip Cookie Dough", "of course we make our own cookie dough"],
 ["Local Strawberry", "Grown right down the road.(GF)"],
 ["Galaxy", "As many chocolate chips as stars in the sky. GF"],
