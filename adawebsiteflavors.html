@@ -6,7 +6,6 @@
 <title>Display</title>
 
 <style>
-
   /* FONTS: embedded right in this file so they show for every visitor (no downloads or installs needed). */
   @font-face {
     font-family: 'Bubblegum Sans';
@@ -24,7 +23,7 @@
   /* PAGE: white background with some space around the edges */
   body {
     margin: 0;
-    background: transparent;
+    background: #fff;
     padding: 30px;
     box-sizing: border-box;
   }
@@ -50,7 +49,7 @@
   /* NAME: large pink Bubblegum Sans text. Change color or font-size here. */
   .entry h2 {
     font-family: 'Bubblegum Sans', cursive;
-    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-size: 2.6rem;
     font-weight: normal;
     color: #a8325f; /* shop pink */
     margin: 0 0 4px;
@@ -59,11 +58,11 @@
   /* DESCRIPTION: smaller gray SF Cartoonist Hand text under each name.
      If a device doesn't have the font, it falls back to Comic Sans. */
   .entry p {
-  font-family: 'SF Cartoonist Hand', 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', cursive;
-  font-size: clamp(1.1rem, 0.9rem + 1vw, 1.8rem);
-  color: #404040;
-  margin: 0;
-}
+    font-family: 'SF Cartoonist Hand', 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', cursive;
+    font-size: 1.1rem;
+    color: #808080; /* gray */
+    margin: 0;
+  }
 
   
 </style>
@@ -78,7 +77,7 @@
 <script>
   // All regular and dairy-free flavors are listed together with no category heading.
   const allFlavors = [
-["Praline Pecan", "Buttery Pecan Base with Pralines (GF) "],
+["Trixie's Turtle", "Vanilla, Fudge, Caramel, Choc. Pecans (GF)"],
 ["Cookie Break", "Oreos, Graham Crackers, and Pure Magic"],
 ["Mimi's Mistake", "Peanut Butter, Oreo, Fudge, Choc. Chips"],
 ["Mimi's Mud", "Espresso, Fudge, Choc. Chips, Oreos. An Icon"],
@@ -86,16 +85,16 @@
 ["Vanilla Fudge", "Vanilla Base, homemade chocolate fudge (GF)"],
 ["Pumpkin", "Better than Pumpkin Pie (GF)"],
 ["Crane Melon", "Local Crane Melons (Gf)"],
-["Raspberry Sorbet", "Smooth raspberry sorbet  (GF) (V)"],
+["Raspberry Ginger Sorbet", "Creamy Raspberry with a kick (GF)(V)"],
 ["Passionfruit Sorbet", "Very tart & refreshing (GF) (V)"],
 ["Strawberry Rose Sorbet", " (GF, V)"],
 ["Vegan Creme De Menthe", "Mint Liqueur, Choc. Chips, Lentil Cream (GF)"],
-["Peppermint Bark", "Homemade Peppermint Bark (GF)"],
+["Absolutely Almond", "Sliced Almonds in an Almond Base (GF)"],
 ["Chocolate Chip Cookie Dough", "of course we make our own cookie dough"],
 ["Local Strawberry", "Grown right down the road.(GF)"],
 ["Galaxy", "As many chocolate chips as stars in the sky. GF"],
 ["Deep Dark Secret", "Dark, Dark, Chocolate. (GF)"],
-["Double Espresso Chip", "Espresso-infused base, choc. espresso chips"],
+["Java Galaxy", "Colombian coffee, chocolate chips (GF)"],
 ["Mimi's Avenue", "Chocolate, Walnuts and Marshmallows (GF)"],
 ["Ginger", "Hot and spicy, cold and creamy (GF)"],
 ["Lemon Sorbet", "Always made from fresh lemons (GF) (V)"],
